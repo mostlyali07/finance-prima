@@ -8,9 +8,8 @@
   display: flex;
   flex-direction: column;
 }
-
 .content {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 /* Sidebar Css */
@@ -74,13 +73,15 @@
         text-decoration: none;
         padding: 12px 14px;
         border-radius: 12px;
+        transition: all 0.3s ease;
         &:hover {
           transition: all 0.3s ease;
           background-color: var(--white);
           color: var(--secondary-color);
         }
         .icon {
-          margin-right: 6px;
+          margin-right: 10px;
+          font-size: 18px;
         }
       }
       a.active {
@@ -114,6 +115,12 @@
     border-radius: 10px;
     fill: var(--white);
     background-color: var(--secondary-color);
+    &:hover {
+      transition: all 0.3s ease;
+      fill: var(--secondary-color);
+      background-color: #0000;
+      cursor: pointer;
+    }
   }
   .dropdown {
     button {
@@ -127,5 +134,66 @@
         border: 1px solid #000;
       }
     }
+  }
+}
+
+.account-status {
+  background-color: var(--secondary-color);
+  border-radius: 26px;
+  padding: 20px 28px;
+  color: var(--white);
+  h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+    font-size: 14px;
+  }
+  button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid 1px var(--white);
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 16px;
+    transition: all 0.3s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      background-color: var(--secondary-color);
+      color: var(--white);
+    }
+  }
+  .progressbar {
+    height: 20px;
+    width: 100%;
+    background-color: #404040;
+    border-radius: 12px;
+    margin: 20px 0px;
+    .progress {
+      background-color: var(--primary-color);
+      height: 100%;
+      width: 75%;
+      border-radius: 100px;
+    }
+  }
+}
+
+.box-number {
+  background-color: var(--third-color);
+  border-radius: 26px;
+  padding: 20px;
+  svg {
+    font-size: 28px;
+    cursor: pointer;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+    margin: 0px;
   }
 }
