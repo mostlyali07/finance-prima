@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .main-sidebar {
+    width: 200px;
+  }
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .main-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
