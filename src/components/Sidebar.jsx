@@ -9,8 +9,9 @@ import {
   FaCog,
   FaShapes,
 } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
 
-const Sidebar = () => {
+const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   const location = useLocation();
 
   const menuItems = [
@@ -27,11 +28,14 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="main-sidebar">
+    <div className={`main-sidebar ${isSidebarOpen ? "open" : ""}`}>
       <div className="sidebar">
-        <h2>
-          Finance Prima<span style={{ color: "#d0e1e9" }}>.</span>
-        </h2>
+        <div className="w-100 d-flex align-items-center justify-content-between">
+          <h2>
+            Finance Prima<span style={{ color: "#d0e1e9" }}>.</span>
+          </h2>
+          <RxCross1 className="menu-toggle" onClick={toggleSidebar} />
+        </div>
 
         <div className="side-menus">
           <ul>
@@ -41,8 +45,8 @@ const Sidebar = () => {
                   to={item.path}
                   className={location.pathname === item.path ? "active" : ""}
                 >
-                  <span className="icon">{item.icon}</span>{" "}
-                  <span className="label">{item.label}</span>{" "}
+                  <span className="icon">{item.icon}</span>
+                  <span className="label">{item.label}</span>
                 </Link>
               </li>
             ))}
