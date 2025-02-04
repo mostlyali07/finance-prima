@@ -36,8 +36,8 @@ const RevenueWidget = () => {
       {
         label: "Expenses",
         data: [7500, 7000, 5000, 12000, 9500, 14000],
-        borderColor: "rgba(255,99,132,1)",
-        backgroundColor: "rgba(255,99,132,0.2)",
+        borderColor: "#1c1c1c",
+        backgroundColor: "#1c1c1c",
         tension: 0.4,
         pointRadius: 5,
       },

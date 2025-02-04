@@ -8,6 +8,9 @@ import { IoPieChartOutline } from "react-icons/io5";
 import { FaRegFloppyDisk, FaRegCreditCard } from "react-icons/fa6";
 import InvoiceBox from "../components/InvoiceBox";
 import RevenueWidget from "../components/RevenueWidget";
+import TodoWidget from "../components/TodoWidget";
+import UpcomingWidget from "../components/UpcomingWidget";
+import RecentClients from "../components/RecentClients";
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -72,7 +75,11 @@ const Dashboard = () => {
                     />
                   </div>
                   <div className="col-md-8">
-                    <RevenueWidget/>
+                    <RevenueWidget />
+                  </div>
+
+                  <div className="col-md-12">
+                    <RecentClients/>
                   </div>
                 </div>
               </div>
@@ -81,6 +88,10 @@ const Dashboard = () => {
                 <div className="row">
                   <div className="col-md-12">
                     <AccountStatus />
+                  </div>
+                  <div className="col-md-12">
+                    <TodoWidget />
+                    <UpcomingWidget />
                   </div>
                 </div>
               </div>
