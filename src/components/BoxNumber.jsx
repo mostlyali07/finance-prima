@@ -4,7 +4,7 @@ import { BiDotsVerticalRounded } from "react-icons/bi";
 const BoxNumber = ({ icon, headingNumber, symbol, description }) => {
   return (
     <div className="box-number">
-      <div className="d-flex align-items-center justify-content-between mb-3">
+      <div className="d-flex align-items-center justify-content-between mb-3 w-100">
         {icon}
         <BiDotsVerticalRounded size={24} />
       </div>

@@ -53,6 +53,12 @@
     align-items: center;
     justify-content: space-between;
   }
+  .box-number{
+    margin-top: 24px;
+  }
+  .account-status{
+    margin-top: 24px;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1220px) {

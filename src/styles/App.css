@@ -197,3 +197,55 @@
     margin: 0px;
   }
 }
+
+.invoice-sec {
+  margin-top: 24px;
+  background-color: var(--third-color);
+  border-radius: 26px;
+  padding: 30px 20px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h5 {
+    font-weight: 700;
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .success-tab {
+    span {
+      background-color: #b9d6c8;
+      color: #5f9d57;
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+  }
+  .danger-tab {
+    span {
+      background-color: #d8bfcc;
+      color: #ae4155;
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+  }
+}
+
+
+.revenue-widget{
+  margin-top: 24px;
+  background-color: var(--third-color);
+  border-radius: 26px;
+  padding: 20px;
+  h4{
+    font-weight: 700;
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
